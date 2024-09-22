@@ -4,7 +4,7 @@
     justify-content: center;
     border-bottom: 1px solid #fff;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .header > form {
@@ -95,6 +95,9 @@
     .header > form {
         width: 80%; /* Increase form width for better visibility on smaller screens */
     }
+    .header {
+        padding-top: 25px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -104,6 +107,7 @@
 
   .header{
     margin: 0 20px;
+    padding-top: 25px;
   }
 
     .task-form-container {
