@@ -1,0 +1,92 @@
+.task-card {
+    width: 100%;
+    height: auto; /* Allow card height to adjust dynamically */
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    overflow: hidden; /* Ensure no horizontal overflow */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    display: block;
+    word-break: break-word; /* Ensure long words break to the next line */
+    box-shadow: 1px 1px 4px rgb(91, 90, 90);
+    transition: all 0.2s ease-in-out;
+    cursor: grab;
+}
+
+.task-card:hover{
+    box-shadow: 1px 1px 8px rgb(91, 90, 90);
+   
+}
+
+.task-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    height: fit-content;
+    width: 100%;
+    word-wrap: break-word; /* Ensure long text wraps correctly */
+    overflow-wrap: break-word; /* Prevent text from overflowing */
+    white-space: normal; /* Ensure text wraps within the card */
+    word-break: break-all; /* Force long continuous text to break within the width */
+}
+
+.task-card-container{
+    display: flex;
+    flex-wrap: wrap; /* Ensure tags wrap within the container */
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.task-card-tags {
+    margin-right: 10px; /* Add space between tags and the delete button */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Add spacing between tags */
+}
+
+.task-delete {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.task-delete:hover {
+    background-color: #ebebeb;
+}
+
+.delete-icon {
+    width: 20px;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.task-delete:hover .delete-icon {
+    opacity: 80%;
+}
+
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 850px) {
+    .task-card {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-text {
+        font-size: 16px; /* Reduce font size for mobile */
+    }
+
+    .task-card-tags {
+        gap: 5px; /* Adjust gap for smaller screens */
+    }
+}

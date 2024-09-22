@@ -1,0 +1,29 @@
+.task-category-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.task-category-icon {
+    width: 30px;
+    margin-right: 8px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 850px) {
+    .task-section {
+        margin: 10px 0;
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-category-heading {
+        font-size: 16px;
+    }
+
+    .task-category-icon {
+        width: 25px; /* Smaller icons on mobile */
+    }
+}

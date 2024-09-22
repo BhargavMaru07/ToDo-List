@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(231, 244, 255);
+}
+
+.app{
+  display: grid;
+  grid-template-rows: 200px auto;
+}
+
+.main{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 8%;
+}
+
+.task-section{
+  width: 33.33%;
+  margin: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 850px) {
+  .app {
+      grid-template-rows: auto auto;
+  }
+
+  .main {
+      flex-direction: column; /* Stack columns on smaller screens */
+      padding: 20px 5%;
+  }
+
+  .task-section {
+      width: 100%; /* Take full width */
+      margin: 15px 0; /* Adjust margin for better spacing on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .task-input {
+      font-size: 16px;
+  }
+
+  .header{
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  .task-category {
+      font-size: 14px;
+      width: 100px;
+  }
+
+  .submit-btn {
+      font-size: 14px;
+      padding: 5px 10px;
+  }
+}

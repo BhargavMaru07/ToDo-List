@@ -1,0 +1,116 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: center;
+}
+
+.header > form {
+    width: 50%;
+}
+
+
+.heading {
+    margin: 0 0 20px 0;
+    text-decoration: underline; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 10px;  /*gap between text and underline*/
+    color: #256779;
+}
+
+
+
+.task-input {
+    font-size: 20px;
+    font-weight: 500;
+    background: #f9f9f9;
+    color: #000;
+    border: 1px solid #dfe3e6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.task-input::placeholder {
+    color: #686868;
+}
+
+.task-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    margin: 20px 10px;
+}
+
+.task-form-container .part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-form-container .part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-category {
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.submit-btn {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #6457f9;
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    padding: 3px 13px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    min-width: 105px;
+    flex-grow:1;
+    transition: all 0.2s ease-in;
+}
+
+.submit-btn:hover{
+    background-color: #2f21c9;
+}
+
+
+
+/* Adjust form width for smaller screens */
+@media (max-width: 850px) {
+    .header > form {
+        width: 80%; /* Increase form width for better visibility on smaller screens */
+    }
+}
+
+@media (max-width: 650px) {
+    .header > form {
+        width: 100%; /* Full width on mobile */
+    }
+
+  .header{
+    margin: 0 20px;
+  }
+
+    .task-form-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: flex-start; 
+    }
+
+    .submit-btn {
+        margin-left: 0;
+    }
+}
