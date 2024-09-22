@@ -16,11 +16,15 @@
         margin: 10px 0;
         padding: 0 5%;
     }
+    .task-category-heading {
+        justify-content: start;
+    }
 }
 
 @media (max-width: 480px) {
     .task-category-heading {
         font-size: 16px;
+        justify-content: start;
     }
 
     .task-category-icon {
