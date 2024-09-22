@@ -5,7 +5,7 @@ It's containing Three category, to divide the tasks
  3.Done
 
 # Drag and Drop Feature
-In this,you can able to drag your task and switch to another categorys according to status of task.
+In this,you can able to drag your task and switch to another category according to status of task.
 
 # Tags
 
