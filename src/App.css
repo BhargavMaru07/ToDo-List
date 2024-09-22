@@ -35,6 +35,10 @@ body{
       padding: 20px 5%;
   }
 
+  .header{
+    padding-top: 25px;
+  }
+
   .task-section {
       width: 100%; /* Take full width */
       margin: 15px 0; /* Adjust margin for better spacing on small screens */
@@ -49,6 +53,7 @@ body{
   .header{
     margin: 0 20px;
     font-size: 16px;
+    padding-top: 25px;
   }
 
   .task-category {
