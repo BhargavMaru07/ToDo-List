@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #dcdcdc;
+    border-bottom: 1px solid #fff;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@
 .task-input {
     font-size: 20px;
     font-weight: 500;
-    background: #f9f9f9;
+    background: #fff;
     color: #000;
     border: 1px solid #dfe3e6;
     border-radius: 5px;
